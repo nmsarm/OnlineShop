@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "540138938492",
+    "firebase_url": "https://onlineshop-f09a9.firebaseio.com",
+    "project_id": "onlineshop-f09a9",
+    "storage_bucket": "onlineshop-f09a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540138938492:android:2bb37dffdbb90dd4",
+        "android_client_info": {
+          "package_name": "com.sarmiento.daneahmarelle.onlineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540138938492-siqcfah65dcpn59csmtjpog4dnjudfok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sarmiento.daneahmarelle.onlineshop",
+            "certificate_hash": "a7da85b539ce1494a6929fc39fe77f2b6f05169e"
+          }
+        },
+        {
+          "client_id": "540138938492-v7a9cls2if9ptus35ioctqlhhj5etukd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtNb5tiBkv93DMjYrZdF33ZkLBTeqNLBk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540138938492-v7a9cls2if9ptus35ioctqlhhj5etukd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
