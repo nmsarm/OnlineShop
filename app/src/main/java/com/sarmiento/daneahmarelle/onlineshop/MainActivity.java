@@ -1,6 +1,7 @@
 package com.sarmiento.daneahmarelle.onlineshop;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,9 +15,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+
+
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,21 +69,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -82,24 +76,28 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_shop_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_shop()).commit();
-
-        } else if (id == R.id.nav_blogs_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame,new fragment_blogs()).commit();
-
-        } else if (id == R.id.nav_contact_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_contact()).commit();
-        } else if (id == R.id.nav_about_layout) {
+        if (id == R.id.nav_about_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_about()).commit();
-        } else if (id == R.id.nav_subscribe_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_subscribe()).commit();
-        } else if (id == R.id.nav_settings_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_settings()).commit();
+
+        } else if (id == R.id.nav_profile_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new fragment_profile()).commit();
+
+        }
+        if (id == R.id.action_logout) {
+            logout();
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void logout() {
+        mAuth.getInstance().signOut();
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+        finish();
     }
 }

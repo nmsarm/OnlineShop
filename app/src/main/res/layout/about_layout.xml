@@ -1,15 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/about_layout">
+    android:id="@+id/sv_about_layout">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="175dp"
-        android:text="About Us" />
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="@android:color/holo_green_dark"
+                android:fontFamily="@font/lato_bold"
+                android:text="WHAT IS SIBOL?"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="42sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                app:srcCompat="@drawable/greenleaf" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="SUPPORT LOCAL"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_light"
+                android:text="Sibol is a marketplace, which caters Philippine handmade products or local crafts. It aims to make Filipino products be known and supported by a wider range of Individuals. In Sibol, creators believe that there are so much more about Philippine's culture, talents, and hidden art. "
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                app:srcCompat="@drawable/greenleaf" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="UNIQUE TRAITS"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_light"
+                android:text="Sibol is not only limited to the process of buying and selling a product. It has the sense of community and socialization through its implemented functionalities such as chatbox, favorites, and much more. "
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/greenleaf" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="THE DEVELOPERS"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_light"
+                android:text="Sibol was produced by five developers, which based on the Philippines. These developers started the business as a Grade 12 Software Development student at iACADEMY. "
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/greenleaf" />
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="SIBOL"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_light"
+                android:text="SIbol is a micro-business that started operating last May 2018. It offers the efficient transaction of the customer and the buyer, informative blogs, product advertisement, etc. "
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/greenleaf" />
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="GLOBAL MARKET"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_light"
+                android:text="Sibol believe that Philippine made products has a place in the global market. Also, Sibol believes that Philippine-made product could compete globally."
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 </RelativeLayout>

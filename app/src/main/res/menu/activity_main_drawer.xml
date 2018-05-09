@@ -5,34 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_shop_layout"
-            android:icon="@mipmap/ic_shop_black_24dp"
-            android:title="Shop" />
-        <item
-            android:id="@+id/nav_blogs_layout"
-            android:icon="@mipmap/ic_book_black_24dp"
-            android:title="Blogs" />
-        <item
-            android:id="@+id/nav_contact_layout"
-            android:icon="@mipmap/ic_contact_phone_black_24dp"
-            android:title="Contact Us" />
-        <item
             android:id="@+id/nav_about_layout"
             android:icon="@mipmap/ic_info_black_24dp"
             android:title="About Us" />
-    </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_subscribe_layout"
-                android:icon="@mipmap/ic_shop_black_24dp"
-                android:title="Subscribe" />
-            <item
-                android:id="@+id/nav_settings_layout"
-                android:icon="@mipmap/ic_settings_black_24dp"
-                android:title="Settings" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_profile_layout"
+            android:icon="@mipmap/ic_book_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/action_logout"
+            android:title="Logout"
+            android:visible="true" />
+
+    </group>
 
 </menu>
